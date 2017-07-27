@@ -29,6 +29,7 @@ public class TestServlet extends HttpServlet {
         String name = request.getParameter("name");
         String node = request.getParameter("node");
 
+
         LdapADHelper ad = new LdapADHelper(host, adminName, adminPassword);
 
         response.setContentType("text/html;charset=utf-8");
